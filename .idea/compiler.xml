@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="example-listener" />
+        <module name="example_java8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
