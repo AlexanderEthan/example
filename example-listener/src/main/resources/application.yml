@@ -1,0 +1,4 @@
+server:
+  port: 8564
+  servlet:
+      context-path: /listener
