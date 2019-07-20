@@ -1,18 +1,16 @@
-package com.example.lang;
+package com.example.lang.sort;
 
 /**
- * @Desc: 数组排序算法示例类
+ * @Desc: 快速排序
  * @Auther: 85047
- * @Date: 2019/7/20 15:12
+ * @Date: 2019/7/20 16:44
  */
-public class ArraySort {
+public class QuickSort {
     public static void main(String[] args) {
         Integer[] arr = new Integer[]{21,53,42,35,86,85,23,18,65,54,32,96,13,87};
         long start = System.currentTimeMillis();
         //快速排序
-        //quickSort(arr,0,arr.length);
-        //冒泡排序
-        bubbleSort(arr);
+        quickSort(arr,0,arr.length);
         long end = System.currentTimeMillis();
         System.out.println(end - start);
         for (int i = 0; i < arr.length; i++) {
@@ -20,11 +18,6 @@ public class ArraySort {
         }
     }
 
-    /**
-     * 快速排序
-     * @param arr
-     * @param <T>
-     */
     private static <T extends Comparable<? super T>> void quickSort(T[] arr,int start,int end) {
         if (start >= end - 1)
             return;
@@ -48,22 +41,5 @@ public class ArraySort {
         arr[i] = mark;
         quickSort(arr,start,i);
         quickSort(arr,i+1,end);
-    }
-
-    /**
-     * 冒泡排序
-     * @param arr
-     * @param <T>
-     */
-    private static <T extends Comparable<? super T>> void bubbleSort(T[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (arr[j].compareTo(arr[j+1]) < 0) {
-                    T temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-        }
     }
 }
