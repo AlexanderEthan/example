@@ -14,14 +14,6 @@ public class HelloWorld {
         if (i > 2) {
             System.out.println(3);
         }
-        /*Map<Integer,Integer> map = new HashMap<Integer, Integer>();
-        for (int j = 0; j < 200; j++) {
-            map.put(j,j);
-        }
-        Map<Integer,Integer> map1 = new HashMap<Integer, Integer>(map);
-        for (Map.Entry<Integer, Integer> entry : map1.entrySet()) {
-            System.out.println(entry.getKey()+"------"+entry.getValue());
-        }*/
         System.out.println(Integer.MAX_VALUE+1);
         System.out.println(100>>4);
         System.out.println(-100>>4);
