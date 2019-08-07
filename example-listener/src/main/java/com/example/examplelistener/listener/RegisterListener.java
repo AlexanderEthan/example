@@ -13,4 +13,5 @@ public class RegisterListener implements ApplicationListener<UserRegisterEvent> 
         UserBean user = userRegisterEvent.getUser();
         System.out.println("注册信息，用户名："+user.getName()+"，密码："+user.getPassword());
     }
+
 }

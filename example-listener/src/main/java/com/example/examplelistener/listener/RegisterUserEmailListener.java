@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class RegisterUserEmailListener implements ApplicationListener<UserRegisterEvent> {
 
     @Override
-    @Async
+    @Async("getAsyncExecutor")
     public void onApplicationEvent(UserRegisterEvent event) {
         try {
             Thread.sleep(3000);//静静的沉睡3秒钟

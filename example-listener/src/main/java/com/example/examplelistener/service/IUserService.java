@@ -5,4 +5,7 @@ import com.example.examplelistener.po.UserBean;
 public interface IUserService {
 
     void register(UserBean user);
+
+    void asnycTest();
+
 }

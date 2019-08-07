@@ -24,6 +24,7 @@ public class UserController {
     public String register(UserBean user) {
         //调用注册业务逻辑
         userService.register(user);
+        userService.asnycTest();
         return "注册成功.";
     }
 }
