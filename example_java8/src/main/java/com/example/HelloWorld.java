@@ -1,9 +1,25 @@
-package com.example.lang;
+package com.example;
+
+import jdk.nashorn.internal.ir.LiteralNode;
+
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(54813422));
-        int i =3;
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.stream().forEach( (n) -> System.out.println(n));
+        ListIterator<Integer> iterator = list.listIterator();
+        iterator.next();
+        iterator.add(5);
+        list.stream().forEach( (n) -> System.out.println(n));
+        /*int i =3;
         if (i > 0) {
             System.out.println(0);
         } else if (i > 1) {
@@ -20,7 +36,7 @@ public class HelloWorld {
         System.out.println(-100>>>4);
         System.out.println(100>>4);
         System.out.println(-4>>2);
-        System.out.println("HelloWorld!!!");
+        System.out.println("HelloWorld!!!");*/
         /*static final int tableSizeFor(int cap) {
             int n = cap - 1;
             n |= n >>> 1;
