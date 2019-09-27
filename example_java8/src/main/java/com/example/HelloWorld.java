@@ -9,16 +9,12 @@ import java.util.ListIterator;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<Integer>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.stream().forEach( (n) -> System.out.println(n));
-        ListIterator<Integer> iterator = list.listIterator();
-        iterator.next();
-        iterator.add(5);
-        list.stream().forEach( (n) -> System.out.println(n));
+        String s = "aaaa";
+        String ss = new String("aaaa");
+        String sss = new String("aaaa").intern();
+        System.out.println(s == ss);
+        System.out.println(s == sss);
+        System.out.println(ss == sss);
         /*int i =3;
         if (i > 0) {
             System.out.println(0);
