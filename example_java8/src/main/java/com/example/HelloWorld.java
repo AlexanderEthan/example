@@ -1,10 +1,16 @@
-package com.example.lang;
+package com.example;
 
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(Integer.toBinaryString(1 << 40));
         /*System.out.println(Integer.toBinaryString(54813422));
         int i =3;
+        String s = "aaaa";
+        String ss = new String("aaaa");
+        String sss = new String("aaaa").intern();
+        System.out.println(s == ss);
+        System.out.println(s == sss);
+        System.out.println(ss == sss);
         if (i > 0) {
             System.out.println(0);
         } else if (i > 1) {
