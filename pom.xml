@@ -11,6 +11,7 @@
 
     <modules>
         <module>example-listener</module>
+        <module>example_java8</module>
     </modules>
 
     <parent>
