@@ -2,7 +2,8 @@ package com.example.lang;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(54813422));
+        System.out.println(Integer.toBinaryString(1 << 40));
+        /*System.out.println(Integer.toBinaryString(54813422));
         int i =3;
         if (i > 0) {
             System.out.println(0);
@@ -20,7 +21,7 @@ public class HelloWorld {
         System.out.println(-100>>>4);
         System.out.println(100>>4);
         System.out.println(-4>>2);
-        System.out.println("HelloWorld!!!");
+        System.out.println("HelloWorld!!!");*/
         /*static final int tableSizeFor(int cap) {
             int n = cap - 1;
             n |= n >>> 1;
