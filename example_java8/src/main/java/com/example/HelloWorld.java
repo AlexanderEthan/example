@@ -2,7 +2,11 @@ package com.example;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(1 << 40));
+        System.out.println(Long.MAX_VALUE);
+        System.out.println((Long.MAX_VALUE+"").length());
+        System.out.println("18446744073709551615".length());
+        System.out.println(Math.pow(2,2));
+        //System.out.println(18446744073709551615/Long.MAX_VALUE);
         /*System.out.println(Integer.toBinaryString(54813422));
         int i =3;
         String s = "aaaa";
