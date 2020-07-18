@@ -2,10 +2,12 @@ package com.example;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(Long.MAX_VALUE);
-        System.out.println((Long.MAX_VALUE+"").length());
-        System.out.println("18446744073709551615".length());
-        System.out.println(Math.pow(2,2));
+        int a = 4;
+        int a1 = a++;
+        System.out.println(a1);
+        int b = 4;
+        int b1 = ++b;
+        System.out.println(b1);
         //System.out.println(18446744073709551615/Long.MAX_VALUE);
         /*System.out.println(Integer.toBinaryString(54813422));
         int i =3;
@@ -24,8 +26,8 @@ public class HelloWorld {
         }
         if (i > 2) {
             System.out.println(3);
-        }
-        System.out.println(Integer.MAX_VALUE+1);
+        }*/
+        /*System.out.println(Integer.MAX_VALUE+1);
         System.out.println(100>>4);
         System.out.println(-100>>4);
         System.out.println(-100>>>4);
