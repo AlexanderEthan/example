@@ -1,4 +1,8 @@
 /example_java8/target
 /example-listener/target
+/rabbitmq-producer/target
 /.idea
 /example.iml
+/example-listener.iml
+/example-java8.iml
+/rabbitmq-producer.iml

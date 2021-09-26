@@ -12,6 +12,7 @@
     <modules>
         <module>example-listener</module>
         <module>example_java8</module>
+        <module>rabbitmq-producer</module>
     </modules>
 
     <parent>
